@@ -19,7 +19,7 @@ pipeline {
      
     stage('Test') {
       steps {
-         sh 'npm test'
+         sh 'node hello.js'
       }
     }      
   }
