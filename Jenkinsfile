@@ -21,7 +21,7 @@ pipeline {
     }   
         stage('Sonar') {
             steps {
-               bat(sonar:sonar -Dsonar.host.url=http://172.25.137.163 -Dsonar.login=admin -Dsonar.password=admin/)
+               bat(sonar:sonar -Dsonar.host.url=http://172.25.137.163 \ -Dsonar.login=devops)
             }
          
         }
