@@ -8,11 +8,6 @@ pipeline {
             steps {
                 git 'https://github.com/evertonaraujozup/teste-nodejs'
           }
-          
-          stage ('Test') {
-              steps {
-                  sh 'node hello.js'
-          }
         }
     }
 }
